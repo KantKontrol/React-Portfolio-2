@@ -1,9 +1,9 @@
 import { MDBContainer } from "mdb-react-ui-kit";
 import { PropsWithChildren } from "react";
 
-const PageBase = ({ children }: PropsWithChildren) => {
+const PageBase = (props: PropsWithChildren) => {
   return (
-    <MDBContainer fluid style={{ height: "100vh" }}>
+    <MDBContainer fluid {...props}>
       <MDBContainer
         style={{
           backgroundColor: "#ffffff",
@@ -11,7 +11,7 @@ const PageBase = ({ children }: PropsWithChildren) => {
           boxShadow: "2px 2px 2px lightgray",
         }}
       >
-        {children}
+        {props.children}
       </MDBContainer>
     </MDBContainer>
   );
