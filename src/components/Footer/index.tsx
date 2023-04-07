@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <MDBFooter
       bgColor="light"
-      className="text-center text-lg-start text-muted fixed-bottom border-top"
+      className="text-center text-lg-start text-muted  border-top"
     >
       <section className="">
         <MDBContainer className="text-center text-md-start mt-4">
