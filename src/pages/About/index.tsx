@@ -1,13 +1,9 @@
 import { MDBContainer } from "mdb-react-ui-kit";
 import React from "react";
+import PageBase from "../../components/PageBase";
 
 const About = () => {
-  return (
-    <MDBContainer fluid style={{ backgroundColor: "#ACD4B7", height: "100vh" }}>
-      About
-      <MDBContainer style={{ backgroundColor: "#ffffff" }}>test</MDBContainer>
-    </MDBContainer>
-  );
+  return <PageBase>About</PageBase>;
 };
 
 export default About;

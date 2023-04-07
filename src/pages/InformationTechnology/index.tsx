@@ -1,7 +1,8 @@
 import React from "react";
+import PageBase from "../../components/PageBase";
 
 const InformationTechnology = () => {
-  return <div>InformationTechnology</div>;
+  return <PageBase>Information Technology</PageBase>;
 };
 
 export default InformationTechnology;

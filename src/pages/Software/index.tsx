@@ -1,7 +1,8 @@
 import React from "react";
+import PageBase from "../../components/PageBase";
 
 const Software = () => {
-  return <div>Software</div>;
+  return <PageBase>Software</PageBase>;
 };
 
 export default Software;
