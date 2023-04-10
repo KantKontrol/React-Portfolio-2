@@ -3,11 +3,11 @@ import { PropsWithChildren } from "react";
 
 const PageBase = (props: PropsWithChildren) => {
   return (
-    <MDBContainer fluid {...props}>
+    <MDBContainer fluid className="p-0" {...props}>
       <MDBContainer
+        className="p-0"
         style={{
           backgroundColor: "#ffffff",
-          padding: 10,
           boxShadow: "2px 2px 2px lightgray",
         }}
       >
