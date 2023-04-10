@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <MDBNavbar expand="lg" light bgColor="light" sticky>
       <MDBContainer>
-        <MDBNavbarBrand style={{ marginRight: 20 }}>
+        <MDBNavbarBrand className="pe-2">
           <img
             src={process.env.PUBLIC_URL + "/images/valknut.png"}
             height="30"

@@ -13,10 +13,16 @@ const NavbarItem = ({ to, pathname, text }: NavItemProps) => {
     <MDBNavbarItem
       style={{
         padding: 12,
-        fontWeight: pathname === to ? "bold" : "",
       }}
     >
-      <Link to={to}>{text}</Link>
+      <Link
+        to={to}
+        style={{
+          color: pathname === to ? "rgba(0,0,0,.9)" : "rgba(0,0,0,.55)",
+        }}
+      >
+        {text}
+      </Link>
     </MDBNavbarItem>
   );
 };
