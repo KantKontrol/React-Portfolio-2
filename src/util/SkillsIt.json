@@ -7,7 +7,7 @@
   {
     "icon": "windows",
     "skill": "Operating Systems",
-    "description": "Expierience working with and troubleshooting Windows, Linux, and MacOS, and Android systems",
+    "description": "Working with and troubleshooting Windows, Linux, and MacOS, and Android systems",
     "fab": true
   },
   {
@@ -17,7 +17,7 @@
   },
   {
     "icon": "ethernet",
-    "skill": "Networking Expierience",
+    "skill": "Networking Experience",
     "description": "Punching RJ45 jacks, creating cables, tracing faulty network connections back to MDF or IDF"
   },
   {
