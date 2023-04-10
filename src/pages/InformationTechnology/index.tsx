@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 
 import PageBase from "../../components/PageBase";
 import {
+  MDBCardGroup,
   MDBCol,
   MDBContainer,
   MDBListGroup,
@@ -12,6 +13,8 @@ import {
 } from "mdb-react-ui-kit";
 import awms from "./images/awms.png";
 import laf from "./images/laf.png";
+import SkillCase from "../../components/SkillCase";
+import SkillsIt from "../../util/SkillsIt.json";
 
 const InformationTechnology = () => {
   return (
@@ -81,13 +84,13 @@ const InformationTechnology = () => {
               time and effective customer service combined with strong technical
               knowledge. I communicated with administrators about upcoming
               technology changes, projects, and general maintenance in there
-              respective schools. I eventually became tasked with managing
-              the district inventory for Chrombook parts, and even made
-              software to assist with certain tasks. By doing
-              work I could be proud of, I became an integral part of the Wayne
-              team. During my time at Wayne, I had the privilege of working with
-              some of the most talented, hard working, and intelligent people. I
-              am truly grateful for my experience there.
+              respective schools. I eventually became tasked with managing the
+              district inventory for Chrombook parts, and even made software to
+              assist with certain tasks. By doing work I could be proud of, I
+              became an integral part of the Wayne team. During my time at
+              Wayne, I had the privilege of working with some of the most
+              talented, hard working, and intelligent people. I am truly
+              grateful for my experience there.
             </ReactMarkdown>
           </MDBCol>
           <MDBCol md="4">
@@ -97,6 +100,20 @@ const InformationTechnology = () => {
               alt="..."
             />
           </MDBCol>
+        </MDBRow>
+        <MDBRow className="row-cols-1 row-cols-md-2 row-cols-lg-4 g-1 mb-3 pb-3">
+          {SkillsIt.map(({ icon, skill, description, fab }) => {
+            return (
+              <MDBCol>
+                <SkillCase
+                  icon={icon}
+                  skill={skill}
+                  fab={fab}
+                  description={description}
+                />
+              </MDBCol>
+            );
+          })}
         </MDBRow>
       </MDBContainer>
     </PageBase>
