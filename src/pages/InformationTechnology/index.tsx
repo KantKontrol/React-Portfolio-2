@@ -1,16 +1,7 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-
 import PageBase from "../../components/PageBase";
-import {
-  MDBCardGroup,
-  MDBCol,
-  MDBContainer,
-  MDBListGroup,
-  MDBListGroupItem,
-  MDBRow,
-  MDBTypography,
-} from "mdb-react-ui-kit";
+import { MDBCol, MDBContainer, MDBRow, MDBTypography } from "mdb-react-ui-kit";
 import awms from "./images/awms.png";
 import laf from "./images/laf.png";
 import SkillCase from "../../components/SkillCase";
