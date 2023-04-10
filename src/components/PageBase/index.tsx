@@ -5,7 +5,7 @@ const PageBase = (props: PropsWithChildren) => {
   return (
     <MDBContainer fluid className="p-0" {...props}>
       <MDBContainer
-        className="p-0"
+        className="p-0 border-start"
         style={{
           backgroundColor: "#ffffff",
           boxShadow: "2px 2px 2px lightgray",
