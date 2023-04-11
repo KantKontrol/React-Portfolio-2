@@ -10,14 +10,14 @@ import SkillsIt from "../../util/SkillsIt.json";
 const InformationTechnology = () => {
   return (
     <PageBase>
-      <MDBRow className="p-5">
-        <MDBCol className="text-center">
-          <MDBTypography tag="div" className="display-5 pb-3 mb-3">
-            "IT expertise and customer service."
-          </MDBTypography>
-        </MDBCol>
-      </MDBRow>
       <MDBContainer>
+        <MDBRow className="p-5">
+          <MDBCol className="text-center">
+            <MDBTypography tag="div" className="display-5 pb-3 mb-3">
+              "IT expertise and customer service."
+            </MDBTypography>
+          </MDBCol>
+        </MDBRow>
         <MDBRow>
           <MDBCol>
             <MDBTypography tag="div" className="display-6 pb-3 mb-3">
