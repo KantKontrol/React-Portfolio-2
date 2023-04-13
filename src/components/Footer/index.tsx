@@ -22,11 +22,7 @@ const Footer = () => {
                 <MDBIcon icon="code-branch" className="me-3" />
                 Nicholas DeRissio
               </h6>
-              <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
-              </p>
+              <p>"Any difficulty is overcome when passion is present."</p>
             </MDBCol>
             <MDBCol md="4" lg="3" xl="2" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Social</h6>
