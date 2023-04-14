@@ -4,6 +4,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBTypography } from "mdb-react-ui-kit";
 import ReactMarkdown from "react-markdown";
 import wvhs from "./images/wvhs.jpg";
 import rut from "./images/rut.png";
+import icons from "./icons";
 
 const Software = () => {
   return (
@@ -146,6 +147,11 @@ const Software = () => {
               </ReactMarkdown>
             </MDBRow>
           </MDBCol>
+        </MDBRow>
+        <MDBRow>
+          {icons.map((icon) => {
+            return <img src={icon} />;
+          })}
         </MDBRow>
       </MDBContainer>
     </PageBase>
