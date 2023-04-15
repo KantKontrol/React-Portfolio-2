@@ -1,10 +1,19 @@
 import React from "react";
 import PageBase from "../../components/PageBase";
-import { MDBCol, MDBContainer, MDBRow, MDBTypography } from "mdb-react-ui-kit";
+import {
+  MDBCarousel,
+  MDBCarouselItem,
+  MDBCol,
+  MDBContainer,
+  MDBRow,
+  MDBTypography,
+} from "mdb-react-ui-kit";
 import ReactMarkdown from "react-markdown";
 import wvhs from "./images/wvhs.jpg";
 import rut from "./images/rut.png";
-import icons from "./icons";
+import mywalrusapp from "./images/mywalrusapp.png";
+
+import IconDisplay from "../../components/IconDisplay";
 
 const Software = () => {
   return (
@@ -102,57 +111,101 @@ const Software = () => {
         <MDBRow>
           <MDBCol>
             <MDBTypography tag="div" className="display-6 pb-3 mb-3">
-              Walrus Media Inc.
+              My Walrus App
             </MDBTypography>
           </MDBCol>
         </MDBRow>
+        <MDBRow className="align-items-center justify-content-center mb-4">
+          <MDBCol sm="10">
+            <MDBCarousel
+              showControls
+              showIndicators
+              className="rounded shadow"
+              interval={10000}
+            >
+              <MDBCarouselItem
+                className="w-100 d-block"
+                itemId={1}
+                src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
+                alt="..."
+              >
+                <h5>First slide label</h5>
+                <p>
+                  Nulla vitae elit libero, a pharetra augue mollis interdum.
+                </p>
+              </MDBCarouselItem>
+
+              <MDBCarouselItem
+                className="w-100 d-block"
+                itemId={2}
+                src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
+                alt="..."
+              >
+                <h5>Second slide label</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </MDBCarouselItem>
+
+              <MDBCarouselItem
+                className="w-100 d-block"
+                itemId={3}
+                src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
+                alt="..."
+              >
+                <h5>Third slide label</h5>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl
+                  consectetur.
+                </p>
+              </MDBCarouselItem>
+            </MDBCarousel>
+          </MDBCol>
+        </MDBRow>
+
         <MDBRow className="mb-4">
-          <MDBCol md="4">
-            <img
-              src={wvhs}
-              className="img-fluid shadow-4 img-thumbnail"
-              alt="..."
-            />
-          </MDBCol>
-          <MDBCol md="8">
+          <MDBRow>
+            <ReactMarkdown>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I finally was able to put my
+              skills to use. Walrus was an online teaching platform born amidst
+              *"the remote era"*. Hosts could create events, lessons for those
+              events, sponsors, view analytics all through the dashboard. The
+              events were marketed for their customers on our participant facing
+              website, allowing participants to sign up for events. And finally,
+              hosts would teach there event live, with participant chat, lesson
+              display, with the capacity for multiple camera angles via our
+              events app.
+            </ReactMarkdown>
+          </MDBRow>
+          <MDBCol md="12">
             <MDBRow>
-              <ReactMarkdown>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I finally was able to put my
-                skills to use. Walrus was an online teaching platform born
-                amidst *"the remote era"*. Hosts could create events, lessons
-                for those events, sponsors, view analytics all through the
-                dashboard. The events were marketed for their customers on our
-                participant facing website, allowing participants to sign up for
-                events. And finally, hosts would teach there event live, with
-                participant chat, lesson display, with the capacity for multiple
-                camera angles via our events app.
-              </ReactMarkdown>
-            </MDBRow>
-            <MDBRow>
-              <ReactMarkdown>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throughout my time at Walrus
-                I had the privilege of working with some truly fantastic and
-                intelligent people. Working closely with the team we created
-                software we were proud of. I created functional components in
-                ReactJS combined with numerous other technologies. I had built
-                the lesson manager/editor, sponsors manager/editor, and the
-                event feedback page. I had of course supplemented these projects
-                with their backend counterparts including queries, mutations,
-                database migrations, and more. Working closely with the design
-                team and the other engineers, we made a positive environment
-                full of creativity, support, and excellence. Through Walrus I
-                learned a lot and am truly grateful for my time there. One
-                things for sure, in any facet of the technology industry, you
-                never stop learning.
-              </ReactMarkdown>
+              <MDBCol sm="2">
+                <img
+                  src={mywalrusapp}
+                  className=" shadow-4 img-thumbnail"
+                  alt="..."
+                />
+              </MDBCol>
+              <MDBCol sm="10" className="d-flex align-items-center">
+                <ReactMarkdown>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throughout my time at
+                  Walrus I had the privilege of working with some truly
+                  fantastic and intelligent people. Working closely with the
+                  team we created software we were proud of. I created
+                  functional components in ReactJS combined with numerous other
+                  technologies. I had built the lesson manager/editor, sponsors
+                  manager/editor, and the event feedback page. I had of course
+                  supplemented these projects with their backend counterparts
+                  including queries, mutations, database migrations, and more.
+                  Working closely with the design team and the other engineers,
+                  we made a positive environment full of creativity, support,
+                  and excellence. Through Walrus I learned a lot and am truly
+                  grateful for my time there. One things for sure, in any facet
+                  of the technology industry, you never stop learning.
+                </ReactMarkdown>
+              </MDBCol>
             </MDBRow>
           </MDBCol>
         </MDBRow>
-        <MDBRow>
-          {icons.map((icon) => {
-            return <img src={icon} />;
-          })}
-        </MDBRow>
+        <IconDisplay />
       </MDBContainer>
     </PageBase>
   );
