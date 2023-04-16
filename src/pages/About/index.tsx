@@ -4,6 +4,7 @@ import PageBase from "../../components/PageBase";
 import ReactMarkdown from "react-markdown";
 import NavCard from "../../components/NavCard";
 import boe from "./images/boe.jpg";
+import atpct from "./images/atpct.jpg";
 
 const About = () => {
   return (
@@ -21,23 +22,38 @@ const About = () => {
       <MDBRow>
         <MDBCol
           className="d-flex align-items-center justify-content-center text-center"
-          style={{ height: 200 }}
+          style={{ height: 100 }}
         >
           <MDBTypography tag="div" className="display-6 pb-3 mb-3">
             Please select a journey...
           </MDBTypography>
         </MDBCol>
       </MDBRow>
-      <MDBRow>
-        <MDBCol sm="6"></MDBCol>
-        <MDBCol sm="6"></MDBCol>
-      </MDBRow>
-      <MDBRow className="p-4 gy-2">
+
+      <MDBRow className="p-4 gy-2 text-center">
         <MDBCol sm="6">
-          <NavCard title="Information Technology" to="/it" imgSrc={boe} />
+          <MDBRow className="d-md-none">
+            <MDBTypography tag="div" className="display-6 pb-3 mb-4">
+              Information Technology
+            </MDBTypography>
+          </MDBRow>
+          <MDBRow>
+            <NavCard title="Information Technology" to="/it" imgSrc={boe} />
+          </MDBRow>
         </MDBCol>
         <MDBCol sm="6">
-          <NavCard title="Software Engineering" to="/software" imgSrc={boe} />
+          <MDBRow className="d-md-none">
+            <MDBTypography tag="div" className="display-6 pb-3 mb-4">
+              Software Engineering
+            </MDBTypography>
+          </MDBRow>
+          <MDBRow>
+            <NavCard
+              title="Software Engineering"
+              to="/software"
+              imgSrc={atpct}
+            />
+          </MDBRow>
         </MDBCol>
       </MDBRow>
     </PageBase>
