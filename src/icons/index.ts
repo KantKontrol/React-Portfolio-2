@@ -14,7 +14,6 @@ import jenkins from "./jenkins.svg";
 import mongodb from "./mongodb.svg";
 import mysql from "./mysql.svg";
 import nodejs from "./nodejs.svg";
-// import php from "./php.svg";
 import postgres from "./postgressql.svg";
 import python from "./python.svg";
 import raspberrypi from "./raspberrypi.svg";
@@ -23,7 +22,6 @@ import reactnative from "./reactnative.svg";
 import redux from "./redux.svg";
 import sass from "./sass.svg";
 import typescript from "./typescript.svg";
-import vb from "./vb.svg";
 const icons = [
   arduino,
   atlassian,
@@ -41,7 +39,6 @@ const icons = [
   mongodb,
   mysql,
   nodejs,
-
   postgres,
   python,
   raspberrypi,
@@ -50,6 +47,5 @@ const icons = [
   redux,
   sass,
   typescript,
-  vb,
 ];
 export default icons;
