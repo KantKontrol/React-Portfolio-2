@@ -10,19 +10,20 @@ import {
 } from "mdb-react-ui-kit";
 import ReactMarkdown from "react-markdown";
 import wvhs from "./images/wvhs.jpg";
-import rut from "./images/rut.png";
+import rutcert from "./images/rutcert.jpg";
 import mywalrusapp from "./images/mywalrusapp.png";
 
 import IconDisplay from "../../components/IconDisplay";
+import WalCaro from "../../components/WalCaro";
 
 const Software = () => {
   return (
     <PageBase>
-      <MDBContainer>
+      <MDBContainer className="pb-2">
         <MDBRow className="p-5">
           <MDBCol className="text-center">
             <MDBTypography tag="div" className="display-5 pb-3 mb-3">
-              "IT expertise and customer service."
+              "Never stop learning."
             </MDBTypography>
           </MDBCol>
         </MDBRow>
@@ -33,15 +34,15 @@ const Software = () => {
             </MDBTypography>
           </MDBCol>
         </MDBRow>
-        <MDBRow className="mb-4">
-          <MDBCol md="4">
+        <MDBRow className="mb-4 clearfix">
+          <MDBCol lg="4" md="12">
             <img
               src={wvhs}
               className="img-fluid shadow-4 img-thumbnail"
               alt="..."
             />
           </MDBCol>
-          <MDBCol md="8">
+          <MDBCol lg="8" md="12">
             <MDBRow>
               <ReactMarkdown>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growing up I played video
@@ -89,11 +90,11 @@ const Software = () => {
             </MDBTypography>
           </MDBCol>
         </MDBRow>
-        <MDBRow className="mb-4">
-          <MDBCol md="2">
-            <img src={rut} className=" shadow-4 img-thumbnail" alt="..." />
+        <MDBRow className="mb-4 align-items-center">
+          <MDBCol md="4" className="mb-2">
+            <img src={rutcert} className=" shadow-4 img-thumbnail" alt="..." />
           </MDBCol>
-          <MDBCol md="10">
+          <MDBCol md="8">
             <ReactMarkdown>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eventually, after high school
               and working in the IT sector for a while I wanted to do more with
@@ -117,47 +118,7 @@ const Software = () => {
         </MDBRow>
         <MDBRow className="align-items-center justify-content-center mb-4">
           <MDBCol sm="10">
-            <MDBCarousel
-              showControls
-              showIndicators
-              className="rounded shadow"
-              interval={10000}
-            >
-              <MDBCarouselItem
-                className="w-100 d-block"
-                itemId={1}
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
-                alt="..."
-              >
-                <h5>First slide label</h5>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
-                </p>
-              </MDBCarouselItem>
-
-              <MDBCarouselItem
-                className="w-100 d-block"
-                itemId={2}
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
-                alt="..."
-              >
-                <h5>Second slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </MDBCarouselItem>
-
-              <MDBCarouselItem
-                className="w-100 d-block"
-                itemId={3}
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
-                alt="..."
-              >
-                <h5>Third slide label</h5>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
-              </MDBCarouselItem>
-            </MDBCarousel>
+            <WalCaro />
           </MDBCol>
         </MDBRow>
 
