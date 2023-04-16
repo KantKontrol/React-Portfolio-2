@@ -1,5 +1,4 @@
 import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
-import { PropsWithChildren } from "react";
 import esp from "./images/event_summary_participants.png";
 import graph from "./images/graph_example.png";
 import le from "./images/lessoneditor.gif";

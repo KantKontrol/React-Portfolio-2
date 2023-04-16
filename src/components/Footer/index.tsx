@@ -30,6 +30,7 @@ const Footer = () => {
                 <a
                   href="https://www.linkedin.com/in/nicholas-derissio/"
                   target="_blank"
+                  rel="noreferrer"
                   className="me-2 text-reset"
                 >
                   <MDBIcon fab icon="linkedin" className="me-2" />
@@ -40,6 +41,7 @@ const Footer = () => {
                 <a
                   href="https://github.com/KantKontrol"
                   target="_blank"
+                  rel="noreferrer"
                   className="me-2 text-reset"
                 >
                   <MDBIcon fab icon="github" className="me-2" />

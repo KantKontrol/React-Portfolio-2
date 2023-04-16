@@ -15,7 +15,7 @@ const NavCard = ({ title, to, imgSrc, props }: NavCardProps) => {
       <div className="bg-image hover-overlay rounded" {...props}>
         <img
           src={imgSrc}
-          alt="picture of wayne board of education"
+          alt="wayne board of education"
           className="img-fluid"
         />
         <Link to={to}>

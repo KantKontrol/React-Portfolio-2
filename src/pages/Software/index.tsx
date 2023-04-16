@@ -1,13 +1,6 @@
 import React from "react";
 import PageBase from "../../components/PageBase";
-import {
-  MDBCarousel,
-  MDBCarouselItem,
-  MDBCol,
-  MDBContainer,
-  MDBRow,
-  MDBTypography,
-} from "mdb-react-ui-kit";
+import { MDBCol, MDBContainer, MDBRow, MDBTypography } from "mdb-react-ui-kit";
 import ReactMarkdown from "react-markdown";
 import wvhs from "./images/wvhs.jpg";
 import rutcert from "./images/rutcert.jpg";

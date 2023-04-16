@@ -4,12 +4,11 @@ import {
   MDBIcon,
   MDBNavbar,
   MDBNavbarBrand,
-  MDBNavbarItem,
   MDBNavbarNav,
   MDBNavbarToggler,
 } from "mdb-react-ui-kit";
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import NavbarItem from "../NavbarItem";
 
 const Navbar = () => {

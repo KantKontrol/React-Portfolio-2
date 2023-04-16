@@ -1,6 +1,6 @@
 import React from "react";
 import icons from "../../icons";
-import { MDBCol, MDBRow, MDBTooltip, MDBTypography } from "mdb-react-ui-kit";
+import { MDBCol, MDBRow, MDBTypography } from "mdb-react-ui-kit";
 
 const IconDisplay = () => {
   return (
@@ -18,7 +18,15 @@ const IconDisplay = () => {
       >
         <div>
           {icons.map((icon) => {
-            return <img width={96} height={96} draggable={false} src={icon} />;
+            return (
+              <img
+                width={96}
+                height={96}
+                draggable={false}
+                src={icon}
+                alt="skills icon"
+              />
+            );
           })}
         </div>
       </MDBRow>
