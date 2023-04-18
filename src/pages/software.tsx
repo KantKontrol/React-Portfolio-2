@@ -21,7 +21,7 @@ const Software = () => {
         <MDBRow className="p-5">
           <MDBCol className="text-center">
             <MDBTypography tag="div" className="display-5 pb-3 mb-3">
-              "Never stop learning."
+              &quot;Never stop learning.&quot;
             </MDBTypography>
           </MDBCol>
         </MDBRow>
@@ -44,11 +44,11 @@ const Software = () => {
             <MDBRow>
               <ReactMarkdown>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growing up I played video
-                games in my leisure time. Always begging the question *"How do
-                they make these?"*. Then comes my freshman year of Highschool. I
+                games in my leisure time. Always begging the question *&quot;How do
+                they make these?&quot;*. Then comes my freshman year of Highschool. I
                 chose a Visual Basic and C# course as one of my electives. Now,
                 I can pick up programming languages rather quickly, but at the
-                time it was a different story. It wasn't until sophomore year,
+                time it was a different story. It wasn&apos;t until sophomore year,
                 when I took my first Java class, that it really clicked. We
                 started off making games and programs with JComponents and it
                 was just as educational as it was exciting. I was thrilled. I
@@ -67,7 +67,7 @@ const Software = () => {
                 of us) with extra curricular software problems. This one
                 particular time, he had students in another course making Java
                 classes that would be imported into a game he made. The Java
-                classes all inherited from a *"Fighter"* class but of course
+                classes all inherited from a *&quot;Fighter&quot;* class but of course
                 overrode methods to make them unique. These classes would be
                 imported into the game and they would compete. The naming
                 convention is as follows: `student last name-Fighter.java `. The
@@ -101,12 +101,12 @@ const Software = () => {
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eventually, after high school
               and working in the IT sector for a while I wanted to do more with
               software. With help from my parents to start, I ended up putting
-              myself through Rutgers Coding Bootcamp. I wanted to *"dip my
-              keyboard*" into web development, and I missed being in an
+              myself through Rutgers Coding Bootcamp. I wanted to *&quot;dip my
+              keyboard*&quot; into web development, and I missed being in an
               educational setting. Every Tuesday, Thursday, and Saturday I would
               go straight to school after working full time. On the other days
-              I'd be completing assignments after work. I put my all into it,
-              because that's what I do. Not long after I graduated, a friend
+              I&apos;d be completing assignments after work. I put my all into it,
+              because that&apos;s what I do. Not long after I graduated, a friend
               from the bootcamp reached out to me with and opportunity...Walrus.
             </ReactMarkdown>
           </MDBCol>
@@ -129,7 +129,7 @@ const Software = () => {
             <ReactMarkdown>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I finally was able to put my
               skills to use. Walrus was an online teaching platform born amidst
-              *"the remote era"*. Hosts could create events, lessons for those
+              *&quot;the remote era&quot;*. Hosts could create events, lessons for those
               events, sponsors, view analytics all through the dashboard. The
               events were marketed for their customers on our participant facing
               website, allowing participants to sign up for events. And finally,
@@ -140,14 +140,19 @@ const Software = () => {
           </MDBRow>
           <MDBCol md="12">
             <MDBRow>
-              <MDBCol lg='2' md='4' sm="12">
+              <MDBCol lg="2" md="4" sm="12">
                 <Image
                   src={mywalrusapp}
                   className=" shadow-4 img-thumbnail"
                   alt="my walrus app logo"
                 />
               </MDBCol>
-              <MDBCol lg='10' md='8' sm="12" className="d-flex align-items-center pt-2 pt-md-0">
+              <MDBCol
+                lg="10"
+                md="8"
+                sm="12"
+                className="d-flex align-items-center pt-2 pt-md-0"
+              >
                 <ReactMarkdown>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throughout my time at
                   Walrus I had the privilege of working with some truly

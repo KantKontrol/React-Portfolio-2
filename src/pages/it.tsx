@@ -15,7 +15,7 @@ const InformationTechnology = () => {
         <MDBRow className="p-5">
           <MDBCol className="text-center">
             <MDBTypography tag="div" className="display-5 pb-3 mb-3">
-              "IT expertise and customer service."
+              &quot;IT expertise and customer service.&quot;
             </MDBTypography>
           </MDBCol>
         </MDBRow>
@@ -39,14 +39,15 @@ const InformationTechnology = () => {
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It was nearing summer of my
               junior year in high school. I had been called down to the main
               office. The Wayne Board of Education often pulls kids from the
-              advanced programming classes in hopes they could find a *"summer
-              helper"* , someone who would be interested in helping out the
-              technology department for summer projects. I immediately accepted
-              the offer. The Wayne Board of Education found their kid, but I
-              wasn't just any kid. I had a knack for computers, and have been
-              infatuated with technology ever since I got my hands on my first
-              computer many years ago. I was going to prove myself worthy to the
-              technology department, I wanted to join there team.
+              advanced programming classes in hopes they could find a
+              *&quot;summer helper&quot;* , someone who would be interested in
+              helping out the technology department for summer projects. I
+              immediately accepted the offer. The Wayne Board of Education found
+              their kid, but I wasn&apos;t just any kid. I had a knack for
+              computers, and have been infatuated with technology ever since I
+              got my hands on my first computer many years ago. I was going to
+              prove myself worthy to the technology department, I wanted to join
+              there team.
             </ReactMarkdown>
           </MDBCol>
         </MDBRow>
@@ -60,9 +61,9 @@ const InformationTechnology = () => {
               course the mentorship of the Wayne techs, I learned the basics of
               being an effective Computer Technician. When the time came, I
               applied for the full time position and went through the interview
-              process. I became the first "summer helper" to be brought on to
-              the team full time. I believe where there is passion, anything can
-              be done.
+              process. I became the first &quot;summer helper&quot; to be
+              brought on to the team full time. I believe where there is
+              passion, anything can be done.
             </ReactMarkdown>
           </MDBCol>
         </MDBRow>
@@ -96,7 +97,7 @@ const InformationTechnology = () => {
         <MDBRow className="row-cols-1 row-cols-md-2 row-cols-lg-4 g-1 mb-3 pb-3">
           {SkillsIt.map(({ icon, skill, description, fab }) => {
             return (
-              <MDBCol>
+              <MDBCol key={`skill-${skill}`}>
                 <SkillCase
                   icon={icon}
                   skill={skill}

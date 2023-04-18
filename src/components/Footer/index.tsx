@@ -22,7 +22,7 @@ const Footer = () => {
                 <MDBIcon icon="code-branch" className="me-3" />
                 Nicholas DeRissio
               </h6>
-              <p>"Any difficulty is overcome when passion is present."</p>
+              <p>&quot;Any difficulty is overcome when passion is present.&quot;</p>
             </MDBCol>
             <MDBCol md="4" lg="3" xl="2" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Social</h6>
