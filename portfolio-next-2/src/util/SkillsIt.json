@@ -1,0 +1,46 @@
+[
+  {
+    "icon": "user-md", 
+    "skill": "Troubleshooting",
+    "description": "Effective use of CompTIA troubleshooting methodology"
+  },
+  {
+    "icon": "windows",
+    "skill": "Operating Systems",
+    "description": "Working with and troubleshooting Windows, Linux, and MacOS, and Android systems",
+    "fab": true
+  },
+  {
+    "icon": "tools",
+    "skill": "Repair & Maintenance",
+    "description": "Laptops, Chromebooks, Desktops, Projectors, A/V Systems, Printers, Smart Screens"
+  },
+  {
+    "icon": "ethernet",
+    "skill": "Networking Experience",
+    "description": "Punching RJ45 jacks, creating cables, tracing faulty network connections back to MDF or IDF"
+  },
+  {
+    "icon": "users",
+    "skill": "Customer Service",
+    "description": "Empathetic approach to customer service always leaving end users heard, and satisfied."
+  },
+  {
+    "icon": "project-diagram",
+    "skill": "Helpdesk Ticket Systems",
+    "description": "Tracking, updating, and completing user issues through various ticket systems"
+  },
+  {
+    "icon": "hdd",
+    "skill": "Imaging & Software Installation",
+    "description": "Filewave, PDQDeploy, manual imaging and installation methods"
+  },
+  {
+    "icon": "clipboard-list",
+    "skill": "Inventory Management",
+    "description": "Inventory tracking, part management, facilitating orders via 3rd party vendors"
+  }
+
+
+  
+]
