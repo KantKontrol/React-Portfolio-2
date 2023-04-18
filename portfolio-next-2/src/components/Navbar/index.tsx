@@ -10,6 +10,8 @@ import {
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import NavbarItem from "../NavbarItem";
+import valknut from "../../images/valknut.png";
+import Image, { StaticImageData } from "next/image";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -18,17 +20,12 @@ const Navbar = () => {
     <MDBNavbar expand="lg" light bgColor="light" sticky>
       <MDBContainer>
         <MDBNavbarBrand className="pe-2">
-          <img
-            src={process.env.PUBLIC_URL + "/images/valknut.png"}
-            height="30"
-            alt=""
-            loading="lazy"
-          />
+          <Image src={valknut} height="30" alt="valknut symbol" />
           Nicholas DeRissio
         </MDBNavbarBrand>
         <MDBCollapse navbar show={showNav}>
           <MDBNavbarNav>
-            <NavbarItem pathname={pathname} to="/about" text="About" />
+            <NavbarItem pathname={pathname} to="/" text="About" />
             <NavbarItem
               pathname={pathname}
               to="/it"

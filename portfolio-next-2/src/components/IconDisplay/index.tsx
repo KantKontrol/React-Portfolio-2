@@ -1,6 +1,7 @@
 import React from "react";
 import icons from "../../icons";
 import { MDBCol, MDBRow, MDBTypography } from "mdb-react-ui-kit";
+import Image from "next/image";
 
 const IconDisplay = () => {
   return (
@@ -19,7 +20,7 @@ const IconDisplay = () => {
         <div>
           {icons.map((icon) => {
             return (
-              <img
+              <Image
                 width={96}
                 height={96}
                 draggable={false}
