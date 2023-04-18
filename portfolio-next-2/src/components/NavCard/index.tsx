@@ -9,11 +9,10 @@ interface NavCardProps {
   to: string;
   props?: PropsWithChildren;
 }
-
 const NavCard = ({ title, to, imgSrc, props }: NavCardProps) => {
   return (
     <MDBRipple>
-      <div className="bg-image hover-overlay rounded" {...props}>
+      <div className="bg-image rounded" {...props}>
         <Image
           src={imgSrc}
           alt="wayne board of education"
@@ -21,13 +20,13 @@ const NavCard = ({ title, to, imgSrc, props }: NavCardProps) => {
         />
         <Link href={to}>
           <div
-            className="mask overlay d-flex justify-content-center align-items-center text-center"
+            className="mask d-flex justify-content-center align-items-center text-center"
             style={{
               backgroundColor: "rgba(57, 192, 237, 0.2)",
               color: "#FFFFFF",
             }}
           >
-            <MDBTypography tag="div" className="display-4 pb-3 mb-3">
+            <MDBTypography tag="div" className="display-6 pb-3">
               {title}
             </MDBTypography>
           </div>
