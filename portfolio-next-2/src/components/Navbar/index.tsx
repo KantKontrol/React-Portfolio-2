@@ -11,7 +11,7 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import NavbarItem from "../NavbarItem";
 import valknut from "../../images/valknut.png";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -23,6 +23,14 @@ const Navbar = () => {
           <Image src={valknut} height="30" alt="valknut symbol" />
           Nicholas DeRissio
         </MDBNavbarBrand>
+        <MDBNavbarToggler
+          type="button"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onClick={() => setShowNav(!showNav)}
+        >
+          <MDBIcon icon="bars" fas />
+        </MDBNavbarToggler>
         <MDBCollapse navbar show={showNav}>
           <MDBNavbarNav>
             <NavbarItem pathname={pathname} to="/" text="About" />
@@ -38,14 +46,6 @@ const Navbar = () => {
             />
           </MDBNavbarNav>
         </MDBCollapse>
-        <MDBNavbarToggler
-          type="button"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          onClick={() => setShowNav(!showNav)}
-        >
-          <MDBIcon icon="bars" fas />
-        </MDBNavbarToggler>
       </MDBContainer>
     </MDBNavbar>
   );

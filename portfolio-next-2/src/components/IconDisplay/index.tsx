@@ -21,6 +21,7 @@ const IconDisplay = () => {
           {icons.map((icon) => {
             return (
               <Image
+                key={`skill-${icon.src}`}
                 width={96}
                 height={96}
                 draggable={false}
