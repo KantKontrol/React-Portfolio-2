@@ -7,29 +7,33 @@ import {
   MDBNavbarNav,
   MDBNavbarToggler,
 } from "mdb-react-ui-kit";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
 import NavbarItem from "../NavbarItem";
+import valknut from "../../images/valknut.png";
+import Image from "next/image";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
-  const { pathname } = useLocation();
-
+  const { pathname } = useRouter();
   return (
     <MDBNavbar expand="lg" light bgColor="light" sticky>
       <MDBContainer>
         <MDBNavbarBrand className="pe-2">
-          <img
-            src={process.env.PUBLIC_URL + "/images/valknut.png"}
-            height="30"
-            alt=""
-            loading="lazy"
-          />
+          <Image src={valknut} height="30" alt="valknut symbol" />
           Nicholas DeRissio
         </MDBNavbarBrand>
+        <MDBNavbarToggler
+          type="button"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onClick={() => setShowNav(!showNav)}
+        >
+          <MDBIcon icon="bars" fas />
+        </MDBNavbarToggler>
         <MDBCollapse navbar show={showNav}>
           <MDBNavbarNav>
-            <NavbarItem pathname={pathname} to="/about" text="About" />
+            <NavbarItem pathname={pathname} to="/" text="About" />
             <NavbarItem
               pathname={pathname}
               to="/it"
@@ -42,14 +46,6 @@ const Navbar = () => {
             />
           </MDBNavbarNav>
         </MDBCollapse>
-        <MDBNavbarToggler
-          type="button"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          onClick={() => setShowNav(!showNav)}
-        >
-          <MDBIcon icon="bars" fas />
-        </MDBNavbarToggler>
       </MDBContainer>
     </MDBNavbar>
   );

@@ -1,6 +1,6 @@
 import { MDBNavbarItem } from "mdb-react-ui-kit";
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 interface NavItemProps {
   to: string;
@@ -16,7 +16,7 @@ const NavbarItem = ({ to, pathname, text }: NavItemProps) => {
       }}
     >
       <Link
-        to={to}
+        href={to}
         style={{
           color: pathname === to ? "rgba(0,0,0,.9)" : "rgba(0,0,0,.55)",
         }}

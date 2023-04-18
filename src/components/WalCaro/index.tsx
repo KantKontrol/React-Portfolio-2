@@ -11,65 +11,59 @@ import se from "./images/stat-example.png";
 
 const WalCaro = () => {
   return (
-    <MDBCarousel
-      showControls
-      showIndicators
-      className="rounded shadow"
-      interval={10000}
-      dark
-    >
+    <MDBCarousel showControls showIndicators className="rounded shadow" dark>
       <MDBCarouselItem
         className="w-100 d-block"
         itemId={1}
-        src={lm}
+        src={lm.src}
         alt="walrus lesson manager"
       ></MDBCarouselItem>
       <MDBCarouselItem
         className="w-100 d-block"
         itemId={2}
-        src={le}
+        src={le.src}
         alt="walrus lesson editor"
       ></MDBCarouselItem>
       <MDBCarouselItem
         className="w-100 d-block"
         itemId={3}
-        src={sm}
+        src={sm.src}
         alt="walrus sponsor manager"
       ></MDBCarouselItem>
       <MDBCarouselItem
         className="w-100 d-block"
         itemId={4}
-        src={sc}
+        src={sc.src}
         alt="sponsor creator"
       ></MDBCarouselItem>
       <MDBCarouselItem
         className="w-100 d-block"
         itemId={5}
-        src={sponseditor}
+        src={sponseditor.src}
         alt="sponsor creator"
       ></MDBCarouselItem>
       <MDBCarouselItem
         className="w-100 d-block"
         itemId={6}
-        src={esp}
+        src={esp.src}
         alt="sponsor creator"
       ></MDBCarouselItem>
       <MDBCarouselItem
         className="w-100 d-block"
         itemId={7}
-        src={se}
+        src={se.src}
         alt="example stats"
       ></MDBCarouselItem>
       <MDBCarouselItem
         className="w-100 d-block"
         itemId={8}
-        src={re}
+        src={re.src}
         alt="example ratings"
       ></MDBCarouselItem>
       <MDBCarouselItem
         className="w-100 d-block"
         itemId={9}
-        src={graph}
+        src={graph.src}
         alt="example graph"
       ></MDBCarouselItem>
     </MDBCarousel>
