@@ -27,14 +27,14 @@ const InformationTechnology = () => {
           </MDBCol>
         </MDBRow>
         <MDBRow className="mb-4">
-          <MDBCol md="4">
+          <MDBCol lg="6" sm="12">
             <Image
               src={awms}
               className="img-fluid shadow-4 img-thumbnail"
               alt="Anthony Wayne Middle School"
             />
           </MDBCol>
-          <MDBCol md="8">
+          <MDBCol lg="6" sm="12">
             <ReactMarkdown>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It was nearing summer of my
               junior year in high school. I had been called down to the main
@@ -67,7 +67,7 @@ const InformationTechnology = () => {
           </MDBCol>
         </MDBRow>
         <MDBRow className="mb-4">
-          <MDBCol md="8">
+          <MDBCol lg="8" md="12" sm="12">
             <ReactMarkdown>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I was now tasked to support
               the technology in four buildings. I had the responsibility of one
@@ -85,7 +85,7 @@ const InformationTechnology = () => {
               grateful for my experience there.
             </ReactMarkdown>
           </MDBCol>
-          <MDBCol md="4">
+          <MDBCol lg="4" md="12" sm="12">
             <Image
               src={laf}
               className="img-fluid shadow-4 img-thumbnail"

@@ -30,7 +30,7 @@ export default function Home() {
       <MDBRow className="p-4 gy-2 text-center">
         <MDBCol sm="6">
           <MDBRow className="d-md-none">
-            <MDBTypography tag="div" className="display-6 pb-3 mb-4">
+            <MDBTypography tag="div" className="display-6 pb-3">
               Information Technology
             </MDBTypography>
           </MDBRow>
@@ -40,7 +40,7 @@ export default function Home() {
         </MDBCol>
         <MDBCol sm="6">
           <MDBRow className="d-md-none">
-            <MDBTypography tag="div" className="display-6 pb-3 mb-4">
+            <MDBTypography tag="div" className="display-6 pb-3">
               Software Engineering
             </MDBTypography>
           </MDBRow>

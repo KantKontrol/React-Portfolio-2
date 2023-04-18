@@ -1,4 +1,3 @@
-import React from "react";
 import PageBase from "../components/PageBase";
 import { MDBCol, MDBContainer, MDBRow, MDBTypography } from "mdb-react-ui-kit";
 import ReactMarkdown from "react-markdown";
@@ -8,6 +7,12 @@ import mywalrusapp from "../images/mywalrusapp.png";
 import IconDisplay from "../components/IconDisplay";
 import WalCaro from "../components/WalCaro";
 import Image from "next/image";
+
+import dynamic from "next/dynamic";
+
+const WalCaroNoServer = dynamic(() => import("../components/WalCaro"), {
+  ssr: false,
+});
 
 const Software = () => {
   return (
@@ -84,14 +89,14 @@ const Software = () => {
           </MDBCol>
         </MDBRow>
         <MDBRow className="mb-4 align-items-center">
-          <MDBCol md="4" className="mb-2">
+          <MDBCol lg="4" md="12" className="mb-2">
             <Image
               src={rutcert}
               className=" shadow-4 img-thumbnail"
               alt="Nicholas' Rutgers Certification"
             />
           </MDBCol>
-          <MDBCol md="8">
+          <MDBCol lg="8" md="12">
             <ReactMarkdown>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eventually, after high school
               and working in the IT sector for a while I wanted to do more with
@@ -115,7 +120,7 @@ const Software = () => {
         </MDBRow>
         <MDBRow className="align-items-center justify-content-center mb-4">
           <MDBCol sm="10">
-            <WalCaro />
+            <WalCaroNoServer />
           </MDBCol>
         </MDBRow>
 
@@ -135,14 +140,14 @@ const Software = () => {
           </MDBRow>
           <MDBCol md="12">
             <MDBRow>
-              <MDBCol sm="2">
+              <MDBCol lg='2' md='4' sm="12">
                 <Image
                   src={mywalrusapp}
                   className=" shadow-4 img-thumbnail"
                   alt="my walrus app logo"
                 />
               </MDBCol>
-              <MDBCol sm="10" className="d-flex align-items-center">
+              <MDBCol lg='10' md='8' sm="12" className="d-flex align-items-center pt-2 pt-md-0">
                 <ReactMarkdown>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throughout my time at
                   Walrus I had the privilege of working with some truly
