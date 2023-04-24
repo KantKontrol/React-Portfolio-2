@@ -107,7 +107,7 @@ const Software = () => {
               go straight to school after working full time. On the other days
               I&apos;d be completing assignments after work. I put my all into it,
               because that&apos;s what I do. Not long after I graduated, a friend
-              from the bootcamp reached out to me with and opportunity...Walrus.
+              from the bootcamp reached out to me with an opportunity...Walrus.
             </ReactMarkdown>
           </MDBCol>
         </MDBRow>
